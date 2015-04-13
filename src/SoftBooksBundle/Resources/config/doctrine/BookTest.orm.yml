@@ -1,0 +1,25 @@
+SoftBooksBundle\Entity\BookTest:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        language:
+            type: string
+            length: 255
+        publisher:
+            type: string
+            length: '100'
+        summary:
+            type: text
+    lifecycleCallbacks: {  }

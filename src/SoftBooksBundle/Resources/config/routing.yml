@@ -1,0 +1,7 @@
+soft_books_books:
+    resource: "@SoftBooksBundle/Resources/config/routing/books.yml"
+    prefix:   /books
+
+soft_books_homepage:
+    path:     /
+    defaults: { _controller: SoftBooksBundle:Default:index }

@@ -1,0 +1,27 @@
+soft_books:
+    resource: "@SoftBooksBundle/Resources/config/routing.yml"
+    prefix:   /books
+
+#logins_login:
+#    resource: "@LoginsLoginBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+
+# AcmeDemoBundle routes (to be removed)
+_demo:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix: /demo
+
+_cmf_create:
+    resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"
+
+_welcome:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix: /
+
+_cmf_create:
+    resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

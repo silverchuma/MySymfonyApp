@@ -1,0 +1,4 @@
+services:
+#    soft_books.example:
+#        class: SoftBooksBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

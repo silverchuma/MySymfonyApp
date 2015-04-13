@@ -1,0 +1,33 @@
+imports:
+    - { resource: config.yml }
+
+#framework:
+#    validation:
+#        cache: apc
+
+#doctrine:
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: error
+            handler:      nested
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+# app/config/config*.yml
+# define the parameters in app/config/parameters.yml
+propel:
+    dbal:
+        driver:               pdo_mysql
+        user:                 root
+        password:             null
+        dsn:                  pdo_mysql:host=127.0.0.1;dbname=test;charset=UTF8
+        options:              {}
+        attributes:           {}
